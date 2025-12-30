@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us | Skylight Computer Institute</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
+  <style>
+    /* ===== ABOUT HERO ===== */
+.about-hero{
+  min-height:65vh;
+  display:flex;
+  align-items:center;
+  text-align:center;
+  padding:120px 0 80px;
+  background:
+    radial-gradient(circle at top,#7c3aed,#1e1b4b),
+    linear-gradient(120deg,rgba(34,211,238,0.15),transparent);
+}
+
+.about-hero h1{
+  font-size:clamp(32px,4vw,46px);
+  line-height:1.2;
+}
+
+.about-hero h1 span{
+  color:#22d3ee;
+}
+
+.about-hero p{
+  margin-top:18px;
+  font-size:15px;
+  max-width:700px;
+  margin-inline:auto;
+}
+
+/* ===== ABOUT CONTENT ===== */
+.about-content{
+  padding:70px 0;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1.1fr 0.9fr;
+  gap:40px;
+  align-items:flex-start;
+}
+
+.about-text h2{
+  margin-bottom:14px;
+}
+
+.about-text p{
+  font-size:15px;
+  margin-bottom:14px;
+  line-height:1.6;
+}
+
+/* POINTS */
+.about-points{
+  display:grid;
+  gap:16px;
+}
+
+.about-point{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(34,211,238,0.3);
+  backdrop-filter:blur(12px);
+  padding:14px 16px;
+  border-radius:14px;
+  font-size:14px;
+}
+
+.about-point i{
+  color:#22d3ee;
+  font-size:20px;
+}
+
+/* ===== VISION MISSION ===== */
+.vision-mission{
+  padding:60px 0;
+  background:#12002f;
+}
+
+.vision-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+}
+
+.vision-box{
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(34,211,238,0.3);
+  backdrop-filter:blur(12px);
+  padding:24px;
+  border-radius:18px;
+}
+
+.vision-box h3{
+  color:#22d3ee;
+  margin-bottom:10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .about-hero{
+    padding-top:110px;
+  }
+}
+
+@media(max-width:600px){
+  .about-hero{
+    min-height:auto;
+    padding-bottom:60px;
+  }
+}
+@media (min-width:601px) and (max-width:900px){
+  .about-hero{
+    min-height:45vh;   /* tablet me height kam */
+    padding:100px 0 60px;
+  }
+}
+  </style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="container nav">
+    <h2 class="logo">Skylight<span> Institute</span></h2>
+
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+       <li><a href="about.html" class="active">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="team.html">Our Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ============ ABOUT HERO ============ -->
+<section class="about-hero">
+  <div class="container about-hero-center">
+    <h1>About <span>Skylight Computer Institute</span></h1>
+    <p>
+      A trusted computer education center in Kasna, Greater Noida,
+      focused on practical and career-oriented learning.
+    </p>
+  </div>
+</section>
+
+<!-- ============ ABOUT CONTENT ============ -->
+<section class="about-content">
+  <div class="container about-grid">
+
+    <!-- LEFT -->
+    <div class="about-text">
+      <h2>Who We Are</h2>
+      <p>
+        Skylight Computer Institute was established with the mission
+        to provide quality computer education to students, job seekers,
+        and professionals. We believe in hands-on learning that helps
+        students gain real-world skills.
+      </p>
+
+      <p>
+        Our courses are designed according to industry needs and are
+        taught by experienced instructors with a strong focus on
+        practical training.
+      </p>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="about-points">
+      <div class="about-point">
+        <i class="fa-solid fa-laptop-code"></i>
+        <span>100% Practical Training</span>
+      </div>
+
+      <div class="about-point">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Job-Oriented Courses</span>
+      </div>
+
+      <div class="about-point">
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <span>Experienced Faculty</span>
+      </div>
+
+      <div class="about-point">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Kasna, Greater Noida</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ VISION & MISSION ============ -->
+<section class="vision-mission">
+  <div class="container vision-grid">
+
+    <div class="vision-box">
+      <h3>Our Vision</h3>
+      <p>
+        To become a trusted computer training institute that empowers
+        students with skills for a successful digital career.
+      </p>
+    </div>
+
+    <div class="vision-box">
+      <h3>Our Mission</h3>
+      <p>
+        To deliver affordable, practical and career-focused computer
+        education with continuous student support.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ STATS (REUSE) ============ -->
+<section class="stats">
+  <div class="container stats-box">
+    <div>
+      <h3>500+</h3>
+      <p>Students Trained</p>
+    </div>
+    <div>
+      <h3>10+</h3>
+      <p>Professional Courses</p>
+    </div>
+    <div>
+      <h3>100%</h3>
+      <p>Practical Learning</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+
+  <!-- TOP FOOTER -->
+  <div class="container footer-main">
+
+    <!-- ABOUT -->
+    <div class="footer-col">
+      <h4>Skylight Computer Institute</h4>
+      <p>
+        Job-oriented computer courses with practical training to
+        build a strong digital career.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <ul class="footer-contact">
+        <li><i class="fa-solid fa-location-dot"></i> Kasna, Greater Noida<br>Near ICICI ATM, University Road</li>
+        <li><i class="fa-solid fa-phone"></i> +91 74289 11708</li>
+        <li><i class="fa-solid fa-envelope"></i> info@skylightinstitute.com</li>
+      </ul>
+    </div>
+
+    <!-- MAP -->
+    <div class="footer-map-box">
+      <iframe
+        src="https://www.google.com/maps?q=Kasna%20Greater%20Noida&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- FOLLOW US ROW (SEPARATE) -->
+  <div class="footer-follow">
+    <!-- <h4>Follow Us</h4> -->
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="https://wa.me/917428911708"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    © 2025 Skylight Computer Institute | Kasna, Greater Noida
+  </div>
+
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/917428911708" class="whatsapp" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- MENU SCRIPT -->
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

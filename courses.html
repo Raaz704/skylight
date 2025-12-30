@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses | Skylight Computer Institute</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
+  <style>
+    /* ===== COURSES HERO (CENTERED BANNER) ===== */
+
+.courses-hero{
+  min-height:65vh;            /* banner height increased */
+  display:flex;
+  align-items:center;
+  text-align:center;
+  padding:120px 0 80px;
+  background:
+    radial-gradient(circle at top,#7c3aed,#1e1b4b),
+    linear-gradient(120deg,rgba(34,211,238,0.15),transparent);
+}
+
+.courses-hero-center{
+  max-width:720px;
+  margin:auto;
+}
+
+.courses-hero h1{
+  font-size:clamp(32px,4vw,46px);
+  line-height:1.2;
+}
+
+.courses-hero h1 span{
+  color:#22d3ee;
+}
+
+.courses-hero p{
+  margin-top:18px;
+  font-size:15px;
+  opacity:0.95;
+}
+
+/* ===== COURSES GRID ===== */
+
+.courses-section{
+  padding:60px 0;
+}
+
+.courses-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:24px;
+}
+
+.course-card{
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(34,211,238,0.3);
+  backdrop-filter:blur(14px);
+  padding:24px;
+  border-radius:20px;
+}
+
+.course-card h3{
+  font-size:18px;
+  margin-bottom:6px;
+  color:#22d3ee;
+}
+
+.course-sub{
+  font-size:14px;
+  margin-bottom:14px;
+}
+
+.course-card ul{
+  list-style:none;
+}
+
+.course-card li{
+  font-size:14px;
+  margin-bottom:10px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.course-card i{
+  color:#22d3ee;
+}
+
+/* ACTIVE MENU */
+.menu a.active{
+  color:#22d3ee;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  .courses-hero{
+    min-height:auto;
+    padding-top:110px;
+    padding-bottom:60px;
+  }
+}
+
+/* Tablet devices (601px – 900px) */
+@media (min-width:601px) and (max-width:900px){
+  .courses-hero{
+    min-height:45vh;   /* tablet me height kam */
+    padding:100px 0 60px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="container nav">
+    <h2 class="logo">Skylight<span> Institute</span></h2>
+
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="team.html" >Our Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ============ COURSES HERO (CENTERED BANNER) ============ -->
+<section class="courses-hero">
+  <div class="container courses-hero-center">
+    <h1>Our Professional <span>Computer Courses</span></h1>
+    <p>
+      Job-oriented computer courses with 100% practical training
+      at Skylight Computer Institute, Kasna Greater Noida.
+    </p>
+  </div>
+</section>
+
+<!-- ============ COURSES LIST ============ -->
+<section class="courses-section">
+  <div class="container courses-grid">
+
+    <div class="course-card">
+      <h3>ADCA</h3>
+      <p class="course-sub">Advance Diploma in Computer Applications</p>
+      <ul>
+        <li><i class="fa-solid fa-clock"></i> Duration: 12 Months</li>
+        <li><i class="fa-solid fa-user-graduate"></i> Eligibility: 10th Pass</li>
+        <li><i class="fa-solid fa-desktop"></i> MS Office, Internet, Basics</li>
+      </ul>
+    </div>
+
+    <div class="course-card">
+      <h3>DCA</h3>
+      <p class="course-sub">Diploma in Computer Applications</p>
+      <ul>
+        <li><i class="fa-solid fa-clock"></i> Duration: 6 Months</li>
+        <li><i class="fa-solid fa-user-graduate"></i> Eligibility: 10th Pass</li>
+        <li><i class="fa-solid fa-desktop"></i> Computer Fundamentals</li>
+      </ul>
+    </div>
+
+    <div class="course-card">
+      <h3>MS Office</h3>
+      <p class="course-sub">Office Automation Course</p>
+      <ul>
+        <li><i class="fa-solid fa-clock"></i> Duration: 3 Months</li>
+        <li><i class="fa-solid fa-user-graduate"></i> Eligibility: Anyone</li>
+        <li><i class="fa-solid fa-file-word"></i> Word, Excel, PowerPoint</li>
+      </ul>
+    </div>
+
+    <div class="course-card">
+      <h3>Tally + GST</h3>
+      <p class="course-sub">Accounting & GST Training</p>
+      <ul>
+        <li><i class="fa-solid fa-clock"></i> Duration: 4 Months</li>
+        <li><i class="fa-solid fa-user-graduate"></i> Eligibility: 12th Pass</li>
+        <li><i class="fa-solid fa-calculator"></i> Tally, GST, Accounting</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+
+  <!-- TOP FOOTER -->
+  <div class="container footer-main">
+
+    <!-- ABOUT -->
+    <div class="footer-col">
+      <h4>Skylight Computer Institute</h4>
+      <p>
+        Job-oriented computer courses with practical training to
+        build a strong digital career.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <ul class="footer-contact">
+        <li><i class="fa-solid fa-location-dot"></i> Kasna, Greater Noida<br>Near ICICI ATM, University Road</li>
+        <li><i class="fa-solid fa-phone"></i> +91 74289 11708</li>
+        <li><i class="fa-solid fa-envelope"></i> info@skylightinstitute.com</li>
+      </ul>
+    </div>
+
+    <!-- MAP -->
+    <div class="footer-map-box">
+      <iframe
+        src="https://www.google.com/maps?q=Kasna%20Greater%20Noida&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- FOLLOW US ROW (SEPARATE) -->
+  <div class="footer-follow">
+    <!-- <h4>Follow Us</h4> -->
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="https://wa.me/917428911708"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    © 2025 Skylight Computer Institute | Kasna, Greater Noida
+  </div>
+
+</footer>
+
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/917428911708" class="whatsapp" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- MENU SCRIPT -->
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

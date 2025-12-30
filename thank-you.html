@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You | Skylight Computer Institute</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ===== THANK YOU PAGE ===== */
+
+.thankyou-section{
+  min-height:100vh;
+  padding-top:120px; /* header offset */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:
+    radial-gradient(circle at top,#7c3aed,#1e1b4b),
+    linear-gradient(120deg,rgba(34,211,238,0.15),transparent);
+}
+
+.thankyou-box{
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(34,211,238,0.3);
+  backdrop-filter:blur(14px);
+  padding:40px 30px;
+  border-radius:24px;
+  max-width:420px;
+  width:100%;
+}
+
+.thankyou-icon{
+  font-size:54px;
+  color:#22d3ee;
+  margin-bottom:12px;
+}
+
+.thankyou-box h1{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.thankyou-box p{
+  font-size:15px;
+  margin-bottom:24px;
+  opacity:0.95;
+}
+
+.thankyou-actions{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  .thankyou-section{
+    padding-top:110px;
+  }
+
+  .thankyou-box{
+    padding:32px 22px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="container nav">
+    <h2 class="logo">Skylight<span> Institute</span></h2>
+
+    <button class="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="team.html">Our Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ============ THANK YOU SECTION ============ -->
+<section class="thankyou-section">
+  <div class="thankyou-box">
+
+    <div class="thankyou-icon">
+      <i class="fa-solid fa-circle-check"></i>
+    </div>
+
+    <h1>Thank You!</h1>
+    <p>
+      Your enquiry has been successfully submitted.<br>
+      Our team will contact you shortly.
+    </p>
+
+    <div class="thankyou-actions">
+      <a href="index.html" class="btn primary">Back to Home</a>
+      <a href="https://wa.me/917428911708" class="btn secondary">
+        <i class="fab fa-whatsapp"></i> WhatsApp Us
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+
+  <!-- TOP FOOTER -->
+  <div class="container footer-main">
+
+    <!-- ABOUT -->
+    <div class="footer-col">
+      <h4>Skylight Computer Institute</h4>
+      <p>
+        Job-oriented computer courses with practical training to
+        build a strong digital career.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <ul class="footer-contact">
+        <li><i class="fa-solid fa-location-dot"></i> Kasna, Greater Noida<br>Near ICICI ATM, University Road</li>
+        <li><i class="fa-solid fa-phone"></i> +91 74289 11708</li>
+        <li><i class="fa-solid fa-envelope"></i> info@skylightinstitute.com</li>
+      </ul>
+    </div>
+
+    <!-- MAP -->
+    <div class="footer-map-box">
+      <iframe
+        src="https://www.google.com/maps?q=Kasna%20Greater%20Noida&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- FOLLOW US ROW (SEPARATE) -->
+  <div class="footer-follow">
+    <!-- <h4>Follow Us</h4> -->
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="https://wa.me/917428911708"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    © 2025 Skylight Computer Institute | Kasna, Greater Noida
+  </div>
+
+</footer>
+
+
+
+<!-- MENU SCRIPT -->
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

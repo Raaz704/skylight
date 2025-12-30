@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Team & Students | Skylight Computer Institute</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
+  <style>
+    /* ===== TEAM HERO ===== */
+.team-hero{
+  min-height:60vh;
+  display:flex;
+  align-items:center;
+  text-align:center;
+  padding:120px 0 80px;
+  background:
+    radial-gradient(circle at top,#7c3aed,#1e1b4b),
+    linear-gradient(120deg,rgba(34,211,238,0.15),transparent);
+}
+
+.team-hero h1{
+  font-size:clamp(32px,4vw,46px);
+}
+
+.team-hero span{
+  color:#22d3ee;
+}
+
+/* ===== TEAM SECTION ===== */
+.team-section{
+  padding:70px 0;
+}
+
+.team-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:30px;
+}
+
+.team-card{
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(34,211,238,0.3);
+  padding:24px;
+  border-radius:20px;
+  text-align:center;
+}
+
+.team-card img{
+  width:120px;
+  height:120px;
+  border-radius:50%;     /* 👈 circle confirm */
+  object-fit:cover;
+  display:block;         /* 👈 center enable */
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:14px;
+}
+
+
+.team-card .role{
+  color:#22d3ee;
+  font-size:14px;
+}
+
+.team-card .desc{
+  font-size:14px;
+  margin-top:8px;
+}
+
+/* ===== STUDENTS ===== */
+.students-section{
+  padding:70px 0;
+  background:#12002f;
+}
+
+.students-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:24px;
+}
+
+.student-card{
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(34,211,238,0.3);
+  border-radius:16px;
+  text-align:center;
+  padding:16px;
+}
+
+.student-card img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:12px;
+  margin:0 auto 10px;   /* 👈 safe centering */
+  display:block;
+}
+
+
+.student-card p{
+  font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  .team-hero{
+    min-height:auto;
+    padding-bottom:60px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<!-- HEADER (same as other pages) -->
+<header class="header">
+  <div class="container nav">
+    <h2 class="logo">Skylight<span> Institute</span></h2>
+
+    <button class="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+       <li><a href="about.html" class="active">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="team.html" class="active">Our Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="team-hero">
+  <div class="container team-hero-center">
+    <h1>Our <span>Team & Students</span></h1>
+    <p>
+      Meet the people who make Skylight Computer Institute
+      a trusted learning place.
+    </p>
+  </div>
+</section>
+
+<!-- OUR TEAM -->
+<section class="team-section">
+  <div class="container">
+    <h2 class="section-title">Our <span>Team</span></h2>
+
+    <div class="team-grid">
+
+      <!-- TEAM MEMBER -->
+      <div class="team-card">
+        <img src="istockphoto-1413766112-612x612.jpg" alt="Trainer">
+        <h4>Rahul Sharma</h4>
+        <p class="role">Founder & Trainer</p>
+        <p class="desc">
+          8+ years experience in computer education and student mentoring.
+        </p>
+      </div>
+
+      <div class="team-card">
+        <img src="img1.jpg" alt="Trainer">
+        <h4>Neha Verma</h4>
+        <p class="role">MS Office Trainer</p>
+        <p class="desc">
+          Expert in Office tools with practical teaching approach.
+        </p>
+      </div>
+
+      <div class="team-card">
+        <img src="img2.jpg" alt="Trainer">
+        <h4>Amit Kumar</h4>
+        <p class="role">Tally & GST Trainer</p>
+        <p class="desc">
+          Professional accounting trainer with real industry exposure.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- OUR STUDENTS -->
+<section class="students-section">
+  <div class="container">
+    <h2 class="section-title">Our <span>Students</span></h2>
+
+    <div class="students-grid">
+
+      <!-- STUDENT -->
+      <div class="student-card">
+        <img src="img3.jpg" alt="Student">
+        <h4>Rohit</h4>
+        <p>Course: ADCA</p>
+      </div>
+
+      <div class="student-card">
+        <img src="img4.jpg" alt="Student">
+        <h4>Pooja</h4>
+        <p>Course: DCA</p>
+      </div>
+
+      <div class="student-card">
+        <img src="img5.jpg" alt="Student">
+        <h4>Aman</h4>
+        <p>Course: Tally + GST</p>
+      </div>
+
+      <div class="student-card">
+        <img src="img6.jpg" alt="Student">
+        <h4>Simran</h4>
+        <p>Course: MS Office</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+
+  <!-- TOP FOOTER -->
+  <div class="container footer-main">
+
+    <!-- ABOUT -->
+    <div class="footer-col">
+      <h4>Skylight Computer Institute</h4>
+      <p>
+        Job-oriented computer courses with practical training to
+        build a strong digital career.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <ul class="footer-contact">
+        <li><i class="fa-solid fa-location-dot"></i> Kasna, Greater Noida<br>Near ICICI ATM, University Road</li>
+        <li><i class="fa-solid fa-phone"></i> +91 74289 11708</li>
+        <li><i class="fa-solid fa-envelope"></i> info@skylightinstitute.com</li>
+      </ul>
+    </div>
+
+    <!-- MAP -->
+    <div class="footer-map-box">
+      <iframe
+        src="https://www.google.com/maps?q=Kasna%20Greater%20Noida&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- FOLLOW US ROW (SEPARATE) -->
+  <div class="footer-follow">
+    <!-- <h4>Follow Us</h4> -->
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="https://wa.me/917428911708"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    © 2025 Skylight Computer Institute | Kasna, Greater Noida
+  </div>
+
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/917428911708" class="whatsapp" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
